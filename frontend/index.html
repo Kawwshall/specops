@@ -686,13 +686,9 @@
           </div>
         </div>
         <div class="field" style="margin-top:1.1rem">
-          <label>Intro Video</label>
-          <div class="upload-box" id="vid-box" onclick="document.getElementById('vid-file').click()">
-            <p>3-minute introduction</p>
-            <p class="sub">mp4 only &middot; max 200mb</p>
-            <p class="fname" id="vid-fname"></p>
-            <input type="file" id="vid-file" name="intro_video" accept="video/mp4" onchange="showFile(this,'vid-box','vid-fname')" required />
-          </div>
+          <label>Intro Video URL</label>
+          <input type="url" name="video_url" placeholder="YouTube, Loom, Drive, or any public link" required />
+          <p class="hint">public link to your 3-minute intro</p>
         </div>
       </div>
     </section>
